@@ -1,0 +1,88 @@
+<html>
+<head>
+<title>JEWELLER'S CERTIFICATE</title>
+<style>
+input[type='submit']{
+	width: 150px;
+	height: 45px;
+	padding-left:6px;
+	padding-right:6px;
+	font-family:guru;
+	z-index: 9;
+	font-size: 30px;
+	background: #4FC1E9 none repeat scroll 0% 0%;
+	color: white;
+	text-align: center;
+	border: medium none;
+	outline: medium none;
+	margin-bottom: 0.1em;
+	margin-top: 0.1em;
+	transition: all 0.5s ease 0s;
+}</style>
+</head>
+<body  bgcolor="aaccda">
+<font face="Times New Roman" color=#330033 size=3>
+<h3><b><i>NEW USER REGISTRATION</b></h3>
+<form action="register.php" method='post' enctype="multipart/form-data">
+<table border="0">
+<tr>
+<td><b><i>Surname:</b></td>
+<td><input type='text' value='guru' name="surname" size="20" /></td>
+</tr>
+<tr>
+<td><b><i>Givnname:</b></td>
+<td><input type='text' value='prasad' name="givname" size="20" /></td>
+</tr>
+<tr>
+<td><b><i>Sex</b></td>
+<td>
+<b><input type="radio" checked='checked' value="M" name="sex" value="yes" />Male
+<input type="radio" value="F" name="sex" value="no" />Female</b>
+</td>
+</tr>
+</table>
+<table border="0" width="440">
+<tr>
+<td><b><i>Date Of Birth:</b></td>
+<td><input type='text' value='09' name="day" size="2" /></td>
+<td>/</td>
+<td><input type='text' value='10' name="month" size="2" /></td>
+<td>/</td>
+<td><input type='text' value='1995' name="year" size="4" /></td>
+</tr>
+</table>
+<table border="0" width="990">
+<tr>
+<td height="97"><b><i>Address:</b></td>
+<td><TEXTAREA NAME="address" COLS=40 ROWS=4> SRB</TEXTAREA></td>
+</tr>
+<tr>
+<td><b><i>Phone Number:</b></td>
+<td><input type="number" name="phno" value='8888888888' size="10" /></td>
+</tr>
+<tr>
+<td><b><i>Email ID:</b></td>
+<td><input type='text' value='brguru90@gmail.com' name="eid" size="20" /></td>
+</tr>
+<tr>
+<td><b><i>Username:</b></td>
+<td><input type='text' value='guru' name="user" size="10" /></td>
+</tr>
+<tr>
+<td><b><i>New Password:</b></td>
+<td><input type='text' value='1234' name="pwd1" size="10" /></td>
+</tr>
+<td><b><i>Confirm Password:</b></td>
+<td><input type='text' value='1234' name="pwd2" size="10" /></td>
+</tr>
+<tr>
+<td><b><i>Upload your image:</b></td>
+<td> <input type="file" id="file" value="" name="fileToUpload"  onfocus="this.value='';this.select()" onblur="if (this.value == '') {this.value = 'Username';}"> 
+</td>
+</tr>
+</table>
+<center>
+<b><i><input type="submit"   value="submit">
+</form>
+</body>
+</html>

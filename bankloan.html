@@ -1,0 +1,67 @@
+<html>
+<head>
+<title>BANK LOAN</title>
+</head>
+<body  bgcolor="aaccda">
+<SCRIPT LANGUAGE="JavaScript">
+function doIt() {
+	for (i = 0; i <= 8; i++) {
+		if (document.forms[0].elements[i].value == "") {
+			alert("Please fill out all fields.")
+			document.forms[0].elements[i].focus()
+			break
+		}
+		
+	}
+	
+}
+</SCRIPT>
+<font face="Times New Roman" color=#330033 size=3>
+<h3><b><i>BANK LOAN</i></b></h3>
+<form method="post" action="bankloan.php" >
+<form>
+<table border="0" width="570">
+<tr>
+<td><b><i>BANK NAME:</b></i></td>
+<td><input type="text" value="SBM" name=bname size="40" _onChange="doIt()"></td>
+</tr>
+<tr>
+<td><b><i>Loan Amount:</b></i></td>
+<td><input type="text" value="10000"  name=lamt size="20" _onChange="doIt()">
+Minimum 20,500Aus $</td>
+</tr>
+<tr>
+<td><b><i>Location Of Bank:</b></i></td>
+<td><input type="text" value="srb"  name=lbnk size="40" _onChange="doIt()"></td>
+</tr>
+</table>
+<table border="0" width="475">
+<tr>
+<td><b><i>Loan Sanction Date:</b></i></td>
+<td><input type="text" value="01" name=dob1  size="2" onChange="doIt()"></td>
+<td></td>
+<td><input type="text" value="02" name=dob2  size="2" onChange="doIt()"></td>
+<td></td>
+<td><input type="text" value="2014" name=dob3  size="4" onChange="doIt()"></td>
+</tr>
+</table>
+<table border="0" width="530">
+<tr>
+<td><b><i>Loan Sanction Reference Number:</b></i></td>
+<td><input type="text" value="01" name=lrefno size="40" onChange="doIt()"/></td>
+</tr>
+</table>
+<table border="0" width="660">
+<tr>
+<td><b><i>Property Value Placed:</b></i></td>
+<td><input type="text" value="01" name=pvp size="40" _onChange/></td>
+</tr>
+</table>
+
+</TABLE>
+<center>
+<b><i><input type=submit  value="submit" size="10" >
+</form>
+
+</body>
+</html>
